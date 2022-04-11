@@ -1,11 +1,19 @@
 def check():
-    number = int(input('enter any number:'))
-    for i in range(0, number):
-        x = int(input('enter your number to check it:'))
-        if x % 2 == 0:
-            print(x, ' is even')
-        else:
-            print(x, 'is odd')
+    numbers = []
+    try:
+        x = int(input('enter X value: '))
+        for i in range(0, x):
+            number = int(input(''))
+            numbers.append(number)
+        for num in numbers:
+            if num % 2 == 0:
+                print(num, ' is even')
+            elif num % 2 != 0:
+                print(num, ' is odd')
+            else:
+                print("invalid input(\'float num\')")
+    except:
+        print('you entered a valid input')
 
 
 check()
